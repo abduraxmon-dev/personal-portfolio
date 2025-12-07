@@ -1,0 +1,595 @@
+:root {
+  /* brand color */
+  --brand: #bf7506;
+  --brand-500: #dd9c3c;
+  --brand-100: #f4debe;
+
+  /* dark color */
+  --dark: #211b12;
+  --dark-500: #83807c;
+  --dark-100: #e7e6e4;
+
+  /* font */
+  --font: "Inter", sans-serif;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  list-style: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+}
+
+body {
+  background-color: #fafafa;
+  max-width: 124;
+  width: 100%;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ========== Header section start ========= */
+
+.header-section {
+  width: 80%;
+  position: fixed;
+  z-index: 1000;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.558);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+}
+
+.header-section .logo a img {
+  width: 3rem;
+}
+
+.header-section .navbar ul {
+  display: flex;
+  align-items: cen er;
+  justify-content: center;
+  gap: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.header-section .navbar ul li a {
+  font-size: 1.6rem;
+  color: var(--brand);
+  font-weight: 400;
+  opacity: 80%;
+}
+
+.header-section .navbar ul li a:hover {
+  opacity: 100%;
+  color: #8a5506;
+}
+
+.header-section .menu-bar {
+  display: none;
+}
+
+/* ========== Header section end ========= */
+
+/* ========== Hero section start ========= */
+
+.hero-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-section .gif .home-gif {
+  width: 50rem;
+  height: 50rem;
+}
+
+.hero-section .hero-desc h1 {
+  font-size: 4.8rem;
+  font-weight: 600;
+  letter-spacing: -0.03rem;
+}
+
+.hero-section .hero-desc h3 {
+  width: 80%;
+  font-size: 2.4rem;
+  letter-spacing: -0.03rem;
+  margin-top: 0.8rem;
+}
+
+.hero-section .hero-desc h3 span {
+  color: var(--brand);
+}
+
+.hero-section .hero-desc .desc-btns a img {
+  width: 4rem;
+  margin-top: 2.4rem;
+}
+
+.desc-btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+}
+
+.desc-btns .down-cv {
+  margin-left: 6rem;
+  margin-top: 1rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--dark);
+  padding: 1rem 1rem;
+  border-bottom: 3px solid var(--brand);
+}
+
+.btn:hover {
+  background-color: var(--brand);
+  color: #fff;
+}
+
+/* ========== Hero section end ========= */
+
+/* ========== Projects section start ========= */
+
+.projects-section {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.projects-section h1 {
+  font-size: 4.8rem;
+  color: var(--brand);
+}
+
+.project-cards {
+  width: 100%;
+  height: auto;
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 25rem;
+}
+
+.project-cards .card {
+  width: 100%;
+  margin-bottom: 9rem;
+}
+
+.project-cards .card > img {
+  width: 48rem;
+  border-radius: 0.4rem;
+}
+
+.project-cards .card h3 {
+  margin-top: 1.6rem;
+  font-size: 2.4rem;
+  color: var(--brand);
+  margin-left: 2rem;
+}
+
+.program-langs {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
+  margin-top: 0.8rem;
+  gap: 0.4rem;
+}
+
+.program-langs p {
+  font-size: 1.2rem;
+  color: var(--dark);
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  border: 1px solid var(--brand-500);
+  border-radius: 0.4rem;
+  font-weight: 400;
+}
+
+.program-langs p:hover {
+  background-color: var(--brand);
+  color: #fff;
+}
+
+.project-cards .card .cad-text {
+  margin-top: 1.6rem;
+  margin-left: 2rem;
+  font-size: 1.6rem;
+  color: var(--dark);
+  line-height: 150%;
+}
+
+.project-cards .card .go-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin-top: 1.7rem;
+  margin-left: 2rem;
+}
+
+.project-cards .card .go-link a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  color: var(--dark);
+}
+
+.project-cards .card .go-link a:hover {
+  color: #fff;
+}
+
+.project-cards .card .go-link a img {
+  width: 2.4rem;
+}
+
+/* ========== Projects section end ========= */
+
+/* ========== About section start ========= */
+
+.about-section {
+  width: 100%;
+  height: auto;
+}
+
+.about-section h1 {
+  font-size: 4.8rem;
+  color: var(--brand);
+  margin-top: 8rem;
+}
+
+.about-section .about-me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.about-desc {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.about-desc .about-subtitle1 {
+  font-size: 2.4rem;
+  letter-spacing: -2%;
+  color: var(--dark);
+}
+
+.about-desc h2 {
+  font-size: 3.2rem;
+  color: var(--brand);
+  margin-top: 0.4rem;
+}
+
+.about-desc p {
+  width: 90%;
+  font-size: 1.6rem;
+  color: var(--dark);
+  margin-top: 1.6rem;
+}
+
+.about-desc .about-subtitle2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--brand-500);
+  margin-top: 1.6rem;
+}
+
+.about-desc .btn {
+  margin-top: 1.6rem;
+  display: inline-block;
+}
+
+.about-section .skills {
+  margin-top: 4rem;
+}
+
+.about-section .skills h3 {
+  font-size: 2.4rem;
+  color: var(--dark);
+}
+
+.about-section .skills h3 span {
+  color: var(--brand);
+}
+
+.about-section .skills .program-langs {
+  margin-top: 1.6rem;
+  margin-left: 0;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* ========== About section end ========= */
+
+/* ========== Contact section Start ========= */
+
+.contact-section {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5rem;
+}
+
+.contact-section h1 {
+  font-size: 4.8rem;
+  color: var(--brand);
+  margin-top: 15rem;
+}
+
+.contact-section .contact-form {
+  display: flex;
+  justify-content: flex-end;
+  gap: 4rem;
+}
+
+.contact-section .contact-form form {
+  width: 43.5rem;
+  height: auto;
+  margin-top: 6rem;
+}
+
+.contact-section .contact-form form h3 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.contact-section .contact-form form .input-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 2.4rem;
+}
+
+.contact-section .contact-form form .email {
+  top: 6rem;
+}
+
+.contact-section .contact-form form .message {
+  height: 13rem;
+  top: 10rem;
+}
+
+.contact-section .contact-form form .message textarea {
+  height: 13rem;
+  padding-top: 1.5rem;
+}
+
+.contact-section .contact-form form .message textarea::placeholder {
+  text-align: left;
+}
+
+.input-container label {
+  position: absolute;
+  top: -0.8rem;
+  left: 1.6rem;
+  padding: 0 0.3rem;
+  background-color: #fafafa;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--dark-500);
+}
+
+.input-container input,
+.input-container textarea {
+  width: 100%;
+  height: 5.5rem;
+  border-radius: 0.4rem;
+  background-color: #fafafa;
+  border: 3px solid var(--dark-100);
+  font-size: 1.6rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 0.8rem;
+  outline: none;
+}
+
+.contact-section .contact-form form .contact-btn {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-section .contact-form form .contact-btn > .btn {
+  position: absolute;
+  top: 12rem;
+  background-color: #fafafa;
+  border: none;
+  border-bottom: 3px solid var(--brand);
+}
+
+.contact-section .contact-form form .contact-btn > .btn:hover {
+  background-color: var(--brand);
+}
+
+.contact-img img {
+  width: 40rem;
+  margin-top: 10rem;
+}
+
+/* ========== Contact section end ========= */
+
+/* ========== Lang switcher section start ========= */
+
+.lang-switcher {
+  position: fixed;
+  top: 65rem;
+  right: 18rem;
+  z-index: 1000;
+}
+
+.lang-switcher a {
+  width: 4rem;
+  height: 4rem;
+  background-color: #dd9d3cc5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-switcher a img {
+  width: 2.4rem;
+}
+
+/* selection color changed */
+
+::selection {
+  background-color: var(--brand-100);
+  color: var(--dark);
+}
+
+/* ========== Lang switcher section end ========= */
+
+/* ================================================= */
+
+/* ==========MEDIA ========== */
+
+@media (max-width: 1440px) {
+  .project-cards {
+    width: 100%;
+    height: auto;
+    margin-top: 3.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .project-cards .card > img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .hero-section .gif .home-gif {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .hero-section {
+    padding-top: 10rem;
+  }
+
+  .about-section .about-me .about-gif {
+    display: none;
+  }
+
+  .about-section .about-me .about-desc {
+    width: 100%;
+  }
+
+  .contact-section img {
+    display: none;
+  }
+
+  .contact-section .contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 10rem;
+  }
+
+  .contact-section .contact-form form {
+    margin: 0 auto;
+    margin-top: 6rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .hero-section .gif {
+    display: none;
+  }
+
+  .hero-section .hero-desc h3 {
+    width: 100%;
+  }
+
+  .projects-section {
+    margin-top: 8rem;
+  }
+
+  .lang-switcher {
+    position: fixed;
+    top: 60rem;
+    right: 5rem;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 555px) {
+  .header-section .navbar {
+    display: none;
+  }
+
+  .header-section .menu-bar {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--brand);
+  }
+
+  .contact-section .contact-form form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 440px) {
+  .hero-section .hero-desc h1,
+  .projects-section h1,
+  .about-section h1,
+  .contact-section h1 {
+    font-size: 3.8rem;
+  }
+
+  .hero-section .hero-desc h3 {
+    font-size: 2rem;
+  }
+
+  .hero-section .hero-desc .desc-btns a img {
+    width: 2.5rem;
+  }
+
+  .desc-btns .down-cv {
+    margin-left: 2.5rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+  }
+
+  .project-cards .card .cad-text,
+  .program-langs,
+  .project-cards .card h3,
+  .project-cards .card .go-link {
+    margin-left: 0;
+  }
+
+  .contact-section .contact-form form h3 {
+    font-size: 2.2rem;
+  }
+}
